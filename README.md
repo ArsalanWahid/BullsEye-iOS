@@ -9,4 +9,4 @@ Enjoy!
 This is the sample app I developed credits to RayWenderlich.
 
 
-![alt text](http://url/to/img.png)
+![Project Image](https://user-images.githubusercontent.com/13076610/41907764-421d72b0-795b-11e8-96fc-a72461d0b9d2.jpg)
