@@ -14,17 +14,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var targatValueLabel: UILabel!
     @IBOutlet weak var totalScoreTextLabel: UILabel!
-    
     @IBOutlet weak var roundtextLabel: UILabel!
     
-    
-    
     //MARK:- Properties
-    var currentValue = 0
-    var targetValue = 0
-    var round = 0
-    var totalScore = 0
-    
+    var _currentValue = 0
+    var _targetValue = 0
+    var _round = 0
+    var _totalScore = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,38 +29,60 @@ class ViewController: UIViewController {
         UpdateLabels()
     
     }
-    
-    
+    //MARK:- Methods
     func startNewRound() {
-        targetValue = 1 + Int(arc4random_uniform(100))
-        currentValue = 50
-        slider.value = Float(currentValue)
-        round += 1
+        _targetValue = 1 + Int(arc4random_uniform(100))
+        _currentValue = 50
+        slider.value = Float(_currentValue)
+        _round += 1
         
     }
     
     func UpdateLabels(){
-        targatValueLabel.text = String(targetValue)
-        totalScoreTextLabel.text = String(totalScore)
-        roundtextLabel.text = String(round)
+        targatValueLabel.text = String(_targetValue)
+        totalScoreTextLabel.text = String(_totalScore)
+        roundtextLabel.text = String(_round)
     }
     
-    func calcualteScore(){
+    func startNewGame(){
+        _totalScore = 0
+        _round = 0
+        startNewRound()
     }
 
     //MARK:- Actions
     @IBAction func showAlert() {
         
-        let difference = abs(currentValue - targetValue)
-        let points = 100 - difference
-        totalScore += points
-        let alertMessage = "You scored \(points) points"
+        let title:String
+        let difference = abs(_currentValue - _targetValue)
         
+        var points = 100 - difference
+        
+        if difference == 0 {
+            points += 100
+            title = "Perfect, Extra 200pts."
+        }else if difference == 1 {
+            points += 50
+            title = "Missed by a Wisker,bonus 50pts"
+        }else if difference < 5 {
+            title = "Almost had it"
+        }else if difference < 10 {
+            title = "Pretty Close"
+        }else {
+            title = "Not even Close"
+        }
+        
+        _totalScore += points
+        
+        let alertMessage = "You scored \(points) points"
         //write logic to to show alert view here
-        let alert = UIAlertController(title:"Hello World", message: alertMessage, preferredStyle: .alert)
+        let alert = UIAlertController(title:"\(title)", message: alertMessage, preferredStyle: .alert)
         
         //Add a text field to the alert view
-        let action = UIAlertAction(title: "Awesome", style: .default, handler: nil)
+        let action = UIAlertAction(title: "Awesome", style: .default, handler: {_ in
+            self.startNewRound()
+            self.UpdateLabels()
+        })
         
         //Add action button that user clicks
         alert.addAction(action)
@@ -72,25 +90,21 @@ class ViewController: UIViewController {
         //presernt the alertview
         present(alert, animated: true, completion: nil)
         
-        startNewRound()
-        UpdateLabels()
-        
     }
-    
     
     @IBAction func sliderMoved(_ slider: UISlider) {
         
         //When the slider moves set the slider value ,slider returns a float
-        currentValue = lround(Double(slider.value))
+        _currentValue = lround(Double(slider.value))
         
     }
     
     @IBAction func startOver(_ sender: UIButton) {
-        totalScore = 0
-        round = 0
+        
+    //Sets totalScore and round = 0 and starts new round
+        startNewGame()
+        UpdateLabels()
     }
-    
-    
     
 }
 
