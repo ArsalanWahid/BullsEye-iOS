@@ -6,7 +6,7 @@ Your goal is to place the slider as close as possible to the target value. The c
 
 Enjoy!
 
-This is the sample app I developed credits to RayWenderlich.
+This is the sample app I developed credits to [raywenderlich.com](https://www.raywenderlich.com/)
 
 #### Main Screen View
 
