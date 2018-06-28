@@ -27,6 +27,29 @@ class ViewController: UIViewController {
         
         startNewRound()
         UpdateLabels()
+        
+        //Customizing the Slider by code
+        //Load images from xcassets
+        
+        //Set images for the thumb of the slider with states
+        let sliderThumbImageNormal = #imageLiteral(resourceName: "SliderThumb-Normal")
+        slider.setThumbImage(sliderThumbImageNormal, for: .normal)
+       
+        let sliderThumbHighlighted = #imageLiteral(resourceName: "SliderThumb-Highlighted")
+        slider.setThumbImage(sliderThumbHighlighted, for: .highlighted)
+        
+        //For the slider bar
+        let insets = UIEdgeInsets(top: 0, left: 14, bottom: 0, right: 14)
+        
+        //Add and set image that will represent left side of slider
+        let trackLeftImage = #imageLiteral(resourceName: "SliderTrackLeft")
+        let trackLeftResizeable = trackLeftImage.resizableImage(withCapInsets: insets)
+        slider.setMinimumTrackImage(trackLeftResizeable, for: .normal)
+        
+        //Add and set image that represents right side of slider
+        let trackRightImage = #imageLiteral(resourceName: "SliderTrackRight")
+        let trackRightResizeable = trackRightImage.resizableImage(withCapInsets: insets)
+        slider.setMaximumTrackImage(trackRightResizeable, for: .normal)
     
     }
     //MARK:- Methods
