@@ -127,6 +127,13 @@ class ViewController: UIViewController {
     //Sets totalScore and round = 0 and starts new round
         startNewGame()
         UpdateLabels()
+        
+     //Add core animation using QuartzCore being applies to all of the screen
+        let transition = CATransition()
+        transition.type = kCATransitionFade
+        transition.duration = 1
+        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
+        view.layer.add(transition, forKey: nil)
     }
     
 }
