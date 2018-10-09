@@ -19,11 +19,13 @@ This is the sample app I developed credits to [raywenderlich.com](https://www.ra
 #### 6. Animations
 #### 7. Working with WKWebView to show HTML
 
-#### Main Screen View
+
+
+### Main Screen View
 
 ![Project Image](https://user-images.githubusercontent.com/13076610/41907764-421d72b0-795b-11e8-96fc-a72461d0b9d2.jpg)
 
 
-#### About Screen View
+### About Screen View
 
 ![About Screen image](https://user-images.githubusercontent.com/13076610/42036670-a3a43b22-7aff-11e8-8e84-5053d9e49ed4.jpg)
