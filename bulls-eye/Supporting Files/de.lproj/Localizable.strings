@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  bulls-eye
+
+  Created by Arsalan Wahid Asghar on 9/17/18.
+  Copyright © 2018 Arsalan Wahid Asghar. All rights reserved.
+*/
+
+//German Lanugae localized Strings
+
+"titleOfAlert1" = "Perfekt, Extra 200 Punkte";
+"titleOfAlert1" = "Verpasst von einem Wisker, Bonus 50 Punkte";
+"titleOfAlert3" = "Fast hatte es";
+"titleOfAlert4" = "Ziemlich knapp";
+"notEvenClose" = "Nicht annähernd";
+"awesome" = "genial";
+"You scored %@ points" = "Du hast %@ Punkte erzielt";
+"title" = "Setzen Sie das Bullauge so nah wie möglich an:";
+"score" ="Ergebnis:";
+"round" = "runden:";
+

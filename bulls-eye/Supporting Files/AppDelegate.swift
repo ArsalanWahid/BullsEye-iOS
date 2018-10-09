@@ -28,28 +28,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     //Foreground part of the
     
     func applicationDidBecomeActive(_ application: UIApplication) {
-       print("App is active")
+
     }
     
     //This is the inactive part and maybe app is going to background
     func applicationWillResignActive(_ application: UIApplication) {
-        print("App is not active")
+
     }
 
     //This is the Background part
     func applicationDidEnterBackground(_ application: UIApplication) {
-        print("App going in background")
+
     }
 
     //Application is coming from background to foreground
     func applicationWillEnterForeground(_ application: UIApplication) {
-        print("App going to foreground from background")
+
     }
 
    
     //Application is about to terminate or is suspended
     func applicationWillTerminate(_ application: UIApplication) {
-        print("Application terminating")
+       
     }
 
 

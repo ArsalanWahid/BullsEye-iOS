@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  bulls-eye
+
+  Created by Arsalan Wahid Asghar on 9/17/18.
+  Copyright © 2018 Arsalan Wahid Asghar. All rights reserved.
+*/
+
+
+//English Language localized strings
+
+"titleOfAlert1" = "Perfect, Extra 200pts.";
+"titleOfAlert1" = "Missed by a Wisker,bonus 50pts";
+"titleOfAlert3" = "Almost had it";
+"titleOfAlert4" = "Pretty Close";
+"notEvenClose" = "Not even close";
+"awesome" = "awesome";
+"You scored %@ points" = "You scored %@ points";
+"title" = "Put the Bull Eye as close as you can to:";
+"score" ="Score:";
+"round" = "Round:";

@@ -63,17 +63,33 @@
 		D72868251FACB2680048A5D1 /* bulls-eye */ = {
 			isa = PBXGroup;
 			children = (
+				D72868321FACB2680048A5D1 /* Info.plist */,
+				D728682A1FACB2680048A5D1 /* Main.storyboard */,
+				D778FE77216CC98B006BC755 /* View Controllers */,
+				D778FE76216CC961006BC755 /* Supporting Files */,
+			);
+			path = "bulls-eye";
+			sourceTree = "<group>";
+		};
+		D778FE76216CC961006BC755 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7CEA01E214F90EC00204688 /* Localizable.strings */,
 				D79B406720E5124D009275B7 /* Default-568h@2x.png */,
 				D79B406520E50788009275B7 /* BullsEye.html */,
 				D72868261FACB2680048A5D1 /* AppDelegate.swift */,
-				D79B406320E4E737009275B7 /* AboutViewController.swift */,
-				D72868281FACB2680048A5D1 /* ViewController.swift */,
-				D728682A1FACB2680048A5D1 /* Main.storyboard */,
 				D728682D1FACB2680048A5D1 /* Assets.xcassets */,
-				D72868321FACB2680048A5D1 /* Info.plist */,
-				D7CEA01E214F90EC00204688 /* Localizable.strings */,
 			);
-			path = "bulls-eye";
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D778FE77216CC98B006BC755 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D72868281FACB2680048A5D1 /* ViewController.swift */,
+				D79B406320E4E737009275B7 /* AboutViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
