@@ -54,13 +54,13 @@ class ViewController: UIViewController {
         slider.setMaximumTrackImage(trackRightResizeable, for: .normal)
     
     }
+
     //MARK:- Methods
     func startNewRound() {
         _targetValue = 1 + Int(arc4random_uniform(100))
         _currentValue = 50
         slider.value = Float(_currentValue)
         _round += 1
-        
     }
     
     func UpdateLabels(){
