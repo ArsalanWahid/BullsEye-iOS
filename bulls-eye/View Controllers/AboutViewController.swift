@@ -18,7 +18,7 @@ class AboutViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //load data from the html file
+        //Load data from local html file
         let url = Bundle.main.url(forResource: "BullsEye", withExtension: "html")
         let myRequest = URLRequest(url: url!)
         webView.load(myRequest)
