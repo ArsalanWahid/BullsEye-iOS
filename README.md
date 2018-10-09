@@ -1,4 +1,4 @@
-#Description
+# Description
 
 This is the awesome game of Bull's Eye where you can win points and earn fame by dragging a slider.
 
