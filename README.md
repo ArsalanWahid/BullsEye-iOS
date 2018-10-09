@@ -1,4 +1,4 @@
-# Bulls_Eye_Game
+#Description
 
 This is the awesome game of Bull's Eye where you can win points and earn fame by dragging a slider.
 
@@ -7,6 +7,17 @@ Your goal is to place the slider as close as possible to the target value. The c
 Enjoy!
 
 This is the sample app I developed credits to [raywenderlich.com](https://www.raywenderlich.com/)
+
+
+## Learning Outcome
+
+#### 1. ViewControllers
+#### 2. AlertViewController
+#### 3. IBOutlets and IBActions
+#### 4. Working with UIViews
+#### 5. Managing AppIcons and Images 
+#### 6. Animations
+#### 7. Working with WKWebView to show HTML
 
 #### Main Screen View
 
