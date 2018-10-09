@@ -14,7 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var targatValueLabel: UILabel!
     @IBOutlet weak var totalScoreTextLabel: UILabel!
-    @IBOutlet weak var roundtextLabel: UILabel!
+    
+    @IBOutlet weak var roundTextLabel: UILabel!
     
     //MARK:- Properties
     var _currentValue = 0
@@ -31,6 +32,7 @@ class ViewController: UIViewController {
         //Customizing the Slider by code
         //Load images from xcassets
         
+       
         //Set images for the thumb of the slider with states
         let sliderThumbImageNormal = #imageLiteral(resourceName: "SliderThumb-Normal")
         slider.setThumbImage(sliderThumbImageNormal, for: .normal)
@@ -64,7 +66,7 @@ class ViewController: UIViewController {
     func UpdateLabels(){
         targatValueLabel.text = String(_targetValue)
         totalScoreTextLabel.text = String(_totalScore)
-        roundtextLabel.text = String(_round)
+        roundTextLabel.text = String(_round)
     }
     
     func startNewGame(){
@@ -83,26 +85,28 @@ class ViewController: UIViewController {
         
         if difference == 0 {
             points += 100
-            title = "Perfect, Extra 200pts."
+            title = NSLocalizedString("titleOfAlert1", comment: "Title of the alert")
         }else if difference == 1 {
             points += 50
-            title = "Missed by a Wisker,bonus 50pts"
+            title = NSLocalizedString("titleOfAlert2", comment: "Another title of the alert")
         }else if difference < 5 {
-            title = "Almost had it"
+            title = NSLocalizedString("titleOfAlert3", comment: "Another title of the alert")
         }else if difference < 10 {
-            title = "Pretty Close"
+            title = NSLocalizedString("titleOfAlert4", comment: "Another one")
         }else {
-            title = "Not even Close"
+            title = NSLocalizedString("notEvenClose", comment: "alert title string")
         }
         
         _totalScore += points
         
-        let alertMessage = "You scored \(points) points"
+        
+        let msg = String(format: NSLocalizedString("You scored %@ points", comment: ""), "\(points)")
+        let alertMessage = msg
         //write logic to to show alert view here
         let alert = UIAlertController(title:"\(title)", message: alertMessage, preferredStyle: .alert)
         
         //Add a text field to the alert view
-        let action = UIAlertAction(title: "Awesome", style: .default, handler: {_ in
+        let action = UIAlertAction(title: NSLocalizedString("awesome", comment: "Says Awesome"), style: .default, handler: {_ in
             self.startNewRound()
             self.UpdateLabels()
         })

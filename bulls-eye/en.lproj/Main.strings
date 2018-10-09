@@ -1,0 +1,30 @@
+
+/* Class = "UILabel"; text = "100"; ObjectID = "0Db-4h-lWw"; */
+"0Db-4h-lWw.text" = "100";
+
+/* Class = "UILabel"; text = "999999"; ObjectID = "6j9-iz-1Au"; */
+"6j9-iz-1Au.text" = "999999";
+
+/* Class = "UILabel"; text = "10"; ObjectID = "8F1-JX-MA5"; */
+"8F1-JX-MA5.text" = "10";
+
+/* Class = "UIButton"; normalTitle = "Close"; ObjectID = "9pf-hN-PE4"; */
+"9pf-hN-PE4.normalTitle" = "Close";
+
+/* Class = "UIButton"; normalTitle = "Hit Me!"; ObjectID = "HO0-8c-7P0"; */
+"HO0-8c-7P0.normalTitle" = "Hit Me!";
+
+/* Class = "UILabel"; text = "999999"; ObjectID = "N2B-mI-RNS"; */
+"N2B-mI-RNS.text" = "999999";
+
+/* Class = "UILabel"; text = "Put the Bull Eye as close as you can to:"; ObjectID = "VsF-3w-1Ef"; */
+"VsF-3w-1Ef.text" = "Put the Bull Eye as close as you can to:";
+
+/* Class = "UILabel"; text = "Score:"; ObjectID = "VuK-LE-ChT"; */
+"VuK-LE-ChT.text" = "Score:";
+
+/* Class = "UILabel"; text = "Round:"; ObjectID = "eBX-Cm-kNg"; */
+"eBX-Cm-kNg.text" = "Round:";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "scX-jX-BOk"; */
+"scX-jX-BOk.text" = "1";
